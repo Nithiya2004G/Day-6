@@ -1,0 +1,12 @@
+Runtime r = Runtime.getRuntime( );
+ob1 = null;
+ob2 = null;
+r.gc( );
+}
+protected void finalize( ) {
+System.out.println("Program about to terminate");
+CounterTest.count --;
+System.out.println("Number of objects :"
++ CounterTest.count) ;
+}
+}

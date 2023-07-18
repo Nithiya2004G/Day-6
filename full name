@@ -1,0 +1,13 @@
+class FullName{
+public static void main(String[] args){
+StringBuffer sb=new StringBuffer();
+String surname="Mallapudi";
+String lastname="vijaya";
+sb.append(surname);
+System.out.println("Name: "+sb);
+int n=surname.length();
+sb.insert(n,lastname);
+System.out.println("Full name: "+sb);
+System.out.println("In reverse = "+sb.reverse());
+}
+}
